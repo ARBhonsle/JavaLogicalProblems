@@ -2,13 +2,8 @@ package com.company;
 
 import java.util.Scanner;
 
-<<<<<<< HEAD
 /**
- * Fibonacci series terms displayed
-=======
-/***
  * Fibonacci Series terms computed
->>>>>>> UC6-stopWatch
  */
 public class FibonacciSeries {
     static void fibonacciTerms(int number){
