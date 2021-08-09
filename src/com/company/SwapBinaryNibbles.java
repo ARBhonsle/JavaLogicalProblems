@@ -3,7 +3,7 @@ package com.company;
 import java.util.Scanner;
 
 /**
- * Finding number after Swapping binary nibbles
+ * Finding number after Swapping binary nibbles and check if resulting number is power of two
  */
 public class SwapBinaryNibbles {
     static int swapNibbles(int x)
@@ -16,6 +16,22 @@ public class SwapBinaryNibbles {
         }
         System.out.println();
     }
+    static void powerOfTwo(int number){
+        int count=0,num=number;
+        while(number>0){
+            if(number%2==0){
+                number/=2;
+                count++;
+            }else{
+                break;
+            }
+        }
+        if(num==Math.pow(2,count)){
+            System.out.println("Resulting number is Power of Two");
+        }else{
+            System.out.println("Resulting number is not Power of Two");
+        }
+    }
     static void swapBinaryNibbles(int number){
         int[] binaryNumber=new int[35];
         int i=0,num=number;
@@ -26,6 +42,7 @@ public class SwapBinaryNibbles {
         System.out.println("Before swapping nibbles");
         print(binaryNumber,i);
         System.out.println("After swap "+swapNibbles(num));
+        powerOfTwo(num);
     }
     public static void main(String[] args) {
         System.out.println("Convert number to Binary");
