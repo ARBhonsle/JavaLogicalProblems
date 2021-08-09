@@ -2,6 +2,9 @@ package com.company;
 
 import java.util.Scanner;
 
+/**
+ * Prime number checked
+ */
 public class PrimeNumber {
     static void checkPrime(int number){
         int count=0;
