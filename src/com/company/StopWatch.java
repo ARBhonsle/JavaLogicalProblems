@@ -3,7 +3,7 @@ package com.company;
 import java.util.Scanner;
 
 /**
- * UC6-stopWatch
+ * StopWatch that displays time elapsed
  */
 
 public class StopWatch {
