@@ -2,6 +2,10 @@ package com.company;
 
 import java.util.Scanner;
 
+/**
+ * Perfect Number checked
+ */
+
 public class PerfectNumber {
     static void checkPerfectNumber(int number){
         int sum=0,num=number;

@@ -2,6 +2,9 @@ package com.company;
 
 import java.util.Scanner;
 
+/***
+ * Fibonacci Series terms computed
+ */
 public class FibonacciSeries {
     static void fibonacciTerms(int number){
         int term1=0,term2=1,term3;

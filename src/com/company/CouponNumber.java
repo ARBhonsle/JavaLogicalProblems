@@ -3,6 +3,9 @@ package com.company;
 import java.util.HashSet;
 import java.util.Scanner;
 
+/**
+ * Coupon Number computed
+ */
 public class CouponNumber {
     static void couponNumber(int number){
         HashSet<Double> coupon=new HashSet<Double>();
