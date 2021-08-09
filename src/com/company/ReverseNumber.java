@@ -2,6 +2,10 @@ package com.company;
 
 import java.util.Scanner;
 
+/**
+ * Reverse of Number computed
+ */
+
 public class ReverseNumber {
     static int reverseNumber(int number){
         int reverseNum=0;
