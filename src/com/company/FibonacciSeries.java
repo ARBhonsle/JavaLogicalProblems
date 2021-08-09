@@ -3,7 +3,7 @@ package com.company;
 import java.util.Scanner;
 
 /**
- * Fibonacci series terms displayed
+ * Fibonacci Series terms computed
  */
 public class FibonacciSeries {
     static void fibonacciTerms(int number){
