@@ -5,15 +5,22 @@ import java.util.Scanner;
 
 public class CouponNumber {
     static void couponNumber(int number){
-        HashSet<Double> coupon=new HashSet<Double>();
-        double couponNum,totalNum=0;
-        for (int i=0;i<number;){
-            couponNum=Math.random()*1000;
+        int[] coupon=new int[number];
+        int i=0;
+        int couponNum,totalNum=0;
+        while(i<number){
+            int count=0;
+            couponNum=(int)(Math.random()*100000);
             totalNum++;
-            System.out.println(couponNum);
-            if(!coupon.contains(couponNum)) {
-                coupon.add(couponNum);
+            for(int index=0;index<i;index++) {
+                if(coupon[index]!=(couponNum)){
+                    count++;
+                }
+            }
+            if(count==i){
+                coupon[i] = couponNum;
                 i++;
+                System.out.println(couponNum);
             }
         }
         System.out.println("Total times random numbers generated:"+totalNum);
